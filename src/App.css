@@ -1,0 +1,115 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #dde1e6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #1d4ed8;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+}
+
+.search-form input {
+  padding: 0.5rem 1rem;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.search-form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.book-card {
+  background: rgb(160, 24, 24);
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.book-card:hover {
+  transform: scale(1.03);
+}
+
+.book-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.no-cover {
+  background: #e5e7eb;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  border-radius: 6px;
+}
+
+/* Modal styles */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.cover {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
